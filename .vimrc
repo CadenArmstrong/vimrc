@@ -1,12 +1,7 @@
-call pathogen#infect() " initial pathogen for plugins
 set cindent
 autocmd FileType python setlocal foldmethod=indent smartindent shiftwidth=4 ts=4 et cinwords=if,elif,else,for,while,try,except,finally,def,class
 syntax on
 "filetype plugin indent on
-au VimEnter * RainbowParenthesesLoadRound
-au VimEnter * RainbowParenthesesLoadSquare
-au VimEnter * RainbowParenthesesLoadBraces
-au VimEnter * RainbowParenthesesToggle
 au VimEnter * setlocal spell spelllang=en_ca " spell check on
 set autochdir " automatically cd into file directory
 set background=dark "change background?
